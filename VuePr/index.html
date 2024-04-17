@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vue example</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>{{ price }}</h1>
+      <h3>{{ car_name }}</h3>
+      <p>{{ year }} год;   {{ cash }} рублей;    {{KPP}}; привод: {{WD}}WD</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+
+    // Vue
+            const app = new Vue({
+                el: '#app',
+                data: {
+                    price: 'Прайс-лист',
+                    car_name: 'Toyota RAV4',
+                    year: 2023,
+                    cash: 4800000,
+                    KPP: 'вариатор',
+                    WD: 4    
+                  }})
+    </script>
+  </body>
+</html>
+
